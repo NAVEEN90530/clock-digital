@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+body{
+    background-color: #808183;
+    font-family: 'Orbitron','sans-serif';
+}
+
+.container {
+    height: 340px;
+    width: 740px;
+    background-color: #ebebeb;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+}
+
+.container .pre-container{
+    height: 200px;
+    width: 640px;
+    background-color: #dddddd;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 0.2s;
+}
+
+.container .pre-container .weeks{
+    margin-top: 10px;
+}
+
+.container .pre-container .weeks span{
+    margin-left: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    color: dimgray;
+    transition: all 0.2s;
+}
+
+.container .pre-container .weeks span.curr-day{
+    color: #000;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+.container .pre-container .clock-icon{
+    position: absolute;
+    bottom: 70px;
+    left: 20px;
+    color: black;
+    font-size: 32px;
+    transition: all 0.2s;
+}
+
+.container .pre-container .timer{
+    height: 110px;
+    width: 500px;
+    margin-top: 20px;
+    margin-left: 20%;
+    font-size: 62px;
+}
+
+.container .pre-container .timer span{
+    position: relative;
+    top: 7px;
+    color: black;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.container .pre-container .timer span:nth-child(even){
+    color: dimgray;
+    transition: all 0.2s;
+}
+
+.container .pre-container .meridien{
+    height: 50px;
+    width: 60px;
+    font-size: 28px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 75px;
+    right: 30px;
+    color: dimgray;
+    transition: all 0.2s;
+    text-align: center;
+}
+
+.container .toogle-btn{
+    all: unset;
+    height: 32px;
+    width: 32px;
+    font-size: 28px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272e38;
+    border-radius: 100%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.container.dark {
+    background-color: #272e38;
+    transition: all 0.2s;
+}
+
+.container.dark .pre-container{
+    background-color: #0f1620;
+    transition: all 0.2s;
+}
+
+.container.dark .pre-container .timer span,
+.container.dark .pre-container .clock-icon,
+.container.dark .pre-container .weeks span.curr-day,
+.container.dark .pre-container .meridien .curr-time-period{
+    color: #fff;
+    text-shadow: 0 0 1px #fff;
+}
+
+.container .pre-container .meridien .curr-time-period{
+    color: #000;
+    font-weight: 900;
+    transition: all 0.2s;
+}
